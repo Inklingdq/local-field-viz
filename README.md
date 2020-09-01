@@ -3,3 +3,8 @@ A simple matlab program to visulize "local field factor" in a thin film reflecti
 Depending on the BN thickness, the reflection of spectrum of the sample can be different, as shown below:
 
 ![image](https://raw.githubusercontent.com/Inklingdq/local-field-viz/master/RC%20for%20different%20BN%20thickness%2C%20graphite%202nm.jpg)
+
+
+Future features: 
+Extracting out dielectric function given spectrum and configureation;
+Simple UI to customize layers 
