@@ -7,12 +7,13 @@ wvl = linspace(450,950,1000) % wavelength 500nm - 800nm
 %% Set up layer properties layer order top-down air-bn-sample-bn-graphite-SiO2-Si
 d1=30;  %top bn thickness 
 d3=30;  %bot bn thickness 
-f1=0.3;
-f2=0.2
+%f,g,defines WS2,WSe2 peaks
+f1=0.3; 
+f2=0.2  
 g1=0.015;
 g2=0.02;
 eng = 1243./wvl
-e2 = 5+f1./(-eng.^2+1.68^2-1i*g1*eng)+f2./(-eng.^2+2^2-1i*g2*eng); %sample layer dielectric function, assume a peak at 740
+e2 = 5+f1./(-eng.^2+1.68^2-1i*g1*eng)+f2./(-eng.^2+2^2-1i*g2*eng); %sample layer dielectric function, assume a peak at 740 and 610
 n0 = 1; % air refractive indewvl
 n1 = 1.8; %top BN refractive indewvl
 n2 = e2.^(1/2); %sample layer refractive indewvl
